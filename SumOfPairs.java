@@ -4,8 +4,10 @@ public class SumOfPairs
 {
     static Scanner sc = new Scanner(System.in);
     static int[] nums;
+    static int[][] multiples = new int[500][500];
     static int[] test = {1, 2, 3, 4, 5, 6, 7, 8, 9}; 
-    static int inputVal;
+    static int inputVal, k = 1, j, x, c = 0;
+    static float y;
 
     public static void main(String[] args)
     {
@@ -22,30 +24,35 @@ public class SumOfPairs
 
             System.out.println("input sum");
             inputVal = sc.nextInt();
-
+            
             findSum(test, inputVal);
         }//end of while
     }//end of main
 
+    public static String getMultiples()
+    {
+        String val = "";
+        for(int i = c; i < inputVal / 2; i++)
+        {
+            c = i;
+            if((inputVal / i) == (int)(inputVal / i))
+            {
+                val =  inputVal / i + "" + i;
+                return val;
+            }//end of if
+        }//end of for
+        return val;
+    }//end of getMultiple
+
     public static void findSum(int[] a, int search)
     {
-        int k = 1;
-        for(int i = 0; i < a.length; i++)
+        
+        for(int i = 0; i < multiples.length; i++)
         {
-            if(a[i] + a[k] == search)
+            if()
             {
-                System.out.println(a[i] + " + " + a[k] + " = " + search);
-                break;
+
             }//end of if
-            else if (k < a.length)
-            {
-                k++;
-            }//end of else if
-            else
-            {
-                System.out.println("no sum found");
-                break;
-            }//end of else
         }//end of for
     }//end of findSum
 }//end of class

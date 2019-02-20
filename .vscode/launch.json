@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - SumOfPairs",
+            "request": "launch",
+            "mainClass": "SumOfPairs",
+            "projectName": "SumOfPairs_bcaa8811"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch) - Current File",
             "request": "launch",
             "console": "integratedTerminal",
