@@ -29,21 +29,6 @@ public class SumOfPairs
         }//end of while
     }//end of main
 
-    public static String getMultiples()
-    {
-        String val = "";
-        for(int i = c; i < inputVal / 2; i++)
-        {
-            c = i;
-            if((inputVal / i) == (int)(inputVal / i))
-            {
-                val =  inputVal / i + "" + i;
-                return val;
-            }//end of if
-        }//end of for
-        return val;
-    }//end of getMultiple
-
     public static void findSum(int[] a, int search)
     {
         
